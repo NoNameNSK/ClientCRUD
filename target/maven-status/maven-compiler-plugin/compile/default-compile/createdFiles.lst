@@ -1,0 +1,4 @@
+com\berezin\controller\ClientController.class
+com\berezin\util\DBUtil.class
+com\berezin\model\Client.class
+com\berezin\dao\ClientDAO.class
