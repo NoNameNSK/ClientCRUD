@@ -31,7 +31,6 @@ public class ClientController extends HttpServlet{
         String forward = "";
         String action = request.getParameter("action");
 
-        /*
         if(action.equalsIgnoreCase("delete")){
             int clientId = Integer.parseInt(request.getParameter("clientId"));
             dao.deleteClient(clientId);
@@ -49,14 +48,9 @@ public class ClientController extends HttpServlet{
             forward = INSERT_OR_EDIT;
         }
 
-
-        //forward = LIST_CLIENT;
-        forward = INSERT_OR_EDIT;
+        forward = LIST_CLIENT;
         RequestDispatcher view = request.getRequestDispatcher(forward);
         view.forward(request,response);
-        */
-        request.getRequestDispatcher("index.jsp").forward(request,response);
-
     }
 
     @Override

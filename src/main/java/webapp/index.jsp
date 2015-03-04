@@ -6,6 +6,6 @@
     <title>ClientCRUD</title>
 </head>
 <body>
-<jsp:forward page="/src/main/webapp/index.jsp?action=listClient" />
+<jsp:forward page="/webapp/index.jsp?action=listClient" />
 </body>
 </html>
