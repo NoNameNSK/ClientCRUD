@@ -41,7 +41,7 @@ public class Client {
     }
 
     public void setSecondName(String secondName) {
-        secondName = secondName;
+        this.secondName = secondName;
     }
 
     public String getLastName() {

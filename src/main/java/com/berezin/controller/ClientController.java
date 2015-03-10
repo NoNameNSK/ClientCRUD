@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Created by a.berezin on 27.02.2015.
  */
-@WebServlet("/index")
+@WebServlet("/controller")
 public class ClientController extends HttpServlet{
     private static final long serialVersionUID = 1L;   //?? I don't think what is it, but manual say write it.
     private static String INSERT_OR_EDIT = "client.jsp";
@@ -48,7 +48,6 @@ public class ClientController extends HttpServlet{
             forward = INSERT_OR_EDIT;
         }
 
-        forward = LIST_CLIENT;
         RequestDispatcher view = request.getRequestDispatcher(forward);
         view.forward(request,response);
     }

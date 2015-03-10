@@ -48,6 +48,12 @@ public class ClientDAO {
         try{
             PreparedStatement preparedStatement = con.prepareStatement("update CLIENTS set FIRSTNAME=?, SECONDNAME=?, LASTNAME=?" +
                     "where CLIENTID=?");
+            preparedStatement.setString(1,client.getFirstName());
+            preparedStatement.setString(2,client.getSecondName());
+            preparedStatement.setString(3, client.getLastName());
+            preparedStatement.setInt(4,client.getClientId());
+
+            preparedStatement.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -66,6 +72,7 @@ public class ClientDAO {
                 clients.add(client);
             }
         }catch(SQLException e){
+            System.out.println("Ошибка получения данных из базы");
             e.printStackTrace();
         }
         return clients;
@@ -76,7 +83,7 @@ public class ClientDAO {
         try{
             PreparedStatement preparedStatement = con.prepareStatement("SELECT * from CLIENTS WHERE CLIENTID=?");
             preparedStatement.setInt(1,clientId);
-            ResultSet rs = preparedStatement.executeQuery("SELECT * from CLIENTS WHERE CLIENTID=?");
+            ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
                 client.setClientId(rs.getInt("clientId"));
                 client.setFirstName(rs.getString("firstName"));
@@ -84,6 +91,7 @@ public class ClientDAO {
                 client.setLastName(rs.getString("lastName"));
             }
         }catch(SQLException e){
+            System.out.println("Неудалось получить объект из БД");
             e.printStackTrace();
         }
         return client;
