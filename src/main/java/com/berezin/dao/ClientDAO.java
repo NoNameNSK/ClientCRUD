@@ -2,9 +2,6 @@ package com.berezin.dao;
 
 import com.berezin.util.DBUtil;
 import com.berezin.model.Client;
-
-import javax.servlet.jsp.jstl.sql.SQLExecutionTag;
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -96,4 +93,4 @@ public class ClientDAO {
         }
         return client;
     }
-}
+   }

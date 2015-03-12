@@ -1,4 +1,6 @@
 com\berezin\controller\ClientController.class
-com\berezin\util\DBUtil.class
 com\berezin\model\Client.class
 com\berezin\dao\ClientDAO.class
+com\berezin\dao\ClientDAO_Hibernate.class
+com\berezin\util\HibernateUtil.class
+com\berezin\util\DBUtil.class

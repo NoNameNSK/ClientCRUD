@@ -1,4 +1,6 @@
 C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\util\DBUtil.java
 C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\model\Client.java
+C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\util\HibernateUtil.java
 C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\controller\ClientController.java
 C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\dao\ClientDAO.java
+C:\Users\a.berezin\Desktop\ClientCRUD\src\main\java\com\berezin\dao\ClientDAO_Hibernate.java

@@ -1,10 +1,13 @@
 package com.berezin.model;
 
+import java.io.Serializable;
+
 /**
  * Created by a.berezin on 27.02.2015.
  */
-public class Client {
+public class Client implements Serializable {
 
+    private static final long serialVersionUID = 1L; //Непонял пока зачем этот серийник
     private int clientId;
     private String firstName;
     private String secondName;

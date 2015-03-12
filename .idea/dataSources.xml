@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" />
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2487801597">
+    <data-source source="LOCAL" name="HSQLDB - ClientDB" uuid="d3ca6013-6844-4ff9-b82c-8a7e016288e2">
+      <driver-ref>hsqldb.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/ClientDB/ClientDB</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/ClientDB/hsqldb.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
